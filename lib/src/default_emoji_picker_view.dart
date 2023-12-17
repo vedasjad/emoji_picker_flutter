@@ -226,7 +226,7 @@ class _DefaultEmojiPickerViewState extends State<DefaultEmojiPickerView>
       if (millisecondsSincePressed > 3000 &&
           callbackInterval == const Duration(milliseconds: 75)) {
         // Switch to a longer callback interval for word-by-word deletion
-        callbackInterval = const Duration(milliseconds: 300);
+        callbackInterval = const Duration(milliseconds: 200);
 
         // Cancel the existing timer and start a new one with the updated interval
         _onBackspacePressedCallbackTimer?.cancel();
